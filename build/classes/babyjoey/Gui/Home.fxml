@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="babyjoey.Gui.HomeController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="-11.0" layoutY="-12.0" prefHeight="811.0" prefWidth="601.0" style="-fx-background-color: D1D0CA;" styleClass="right-bar">
+                     <children>
+                        <HBox fx:id="chosenhotelCard" alignment="CENTER" prefHeight="165.0" prefWidth="751.0" styleClass="shadow">
+                           <children>
+                              <Label text="Baby">
+                                 <font>
+                                    <Font name="Cambria Bold" size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Joey" textFill="#faf9f3">
+                                 <font>
+                                    <Font name="Cambria Bold" size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="52.0" prefWidth="310.0" styleClass="search-box">
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <BorderPane prefHeight="53.0" prefWidth="385.0" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="back" layoutX="303.0" layoutY="312.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="148.0" prefWidth="286.0" style="-fx-background-color: #05071F;" text="BackEnd" textFill="WHITE">
+                     <font>
+                        <Font name="MS Reference Specialty" size="27.0" />
+                     </font>
+                  </Button>
+                  <VBox alignment="TOP_CENTER" layoutX="589.0" layoutY="-12.0" prefHeight="811.0" prefWidth="612.0" style="-fx-background-color: #05071F;">
+                     <children>
+                        <HBox fx:id="chosenhotelCard1" alignment="CENTER" prefHeight="165.0" prefWidth="751.0" styleClass="shadow">
+                           <children>
+                              <Label text="Baby" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria Bold" size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Joey" textFill="#d1d0ca">
+                                 <font>
+                                    <Font name="Cambria Bold" size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="front" layoutX="590.0" layoutY="312.0" mnemonicParsing="false" onAction="#GoFront" prefHeight="147.0" prefWidth="252.0" style="-fx-background-color: D1D0CA;" text="FrontEnd">
+                     <font>
+                        <Font name="Cambria Bold" size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
